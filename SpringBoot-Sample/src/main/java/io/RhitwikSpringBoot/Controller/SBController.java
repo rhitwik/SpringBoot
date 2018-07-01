@@ -10,4 +10,5 @@ public class SBController {
 	public String sayGreet() {
 		return "Welcome to Rhitwik's Spring Boot Application Response !!";
 	}
+	
 }

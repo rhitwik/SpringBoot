@@ -31,7 +31,7 @@ public class SBAnimalController {
 		animalService.addAnimal(animal); 
     }
 	
-	@RequestMapping(method=RequestMethod.PUT, value = "/Animal/{id}")
+	@RequestMapping(method=RequestMethod.PUT, value = "/Animals/{id}")
 	public void updateAnimal(@RequestBody Animal animal, @PathVariable String id)
 	{
 		animalService.updateAnimal(animal, id);

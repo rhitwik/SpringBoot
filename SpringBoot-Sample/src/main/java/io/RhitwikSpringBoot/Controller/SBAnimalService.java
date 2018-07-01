@@ -28,12 +28,9 @@ public class SBAnimalService {
 		animalList.add(animal);
 	}
 
-	public String updateAnimal(Animal animal, String id) {
-		
-		animalList.stream().filter(t -> t.getId().equals(id)).findFirst().get().setName(animal.getName());	
-		animalList.stream().filter(t -> t.getId().equals(id)).findFirst().get().setDesc(animal.getDesc());
-	
-		return "Put executed";
+	public void updateAnimal(Animal animal, String id) {
+	  animalList.stream().filter(t -> t.getId().equals(id)).findFirst().get().setDesc(animal.getDesc());
+	  animalList.stream().filter(t -> t.getId().equals(id)).findFirst().get().setName(animal.getName());
 	}
 		
 }
